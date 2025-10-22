@@ -1,5 +1,5 @@
 Diagramy itp.
-relacja 1:1 (prosta kreska z dwoma pionowymi na koncach)
+relacja 1:1 (prosta kreska z dwoma pionowymi na koncach) -||---------||-
 Tabele sa zwiazane relacjami
 struktury relacji 
 zmienne relacji - zwiazek z notacją
@@ -10,3 +10,14 @@ zmienna relacyjna zawiera relacje np. tymczasowa tabela moze to byc wynik zapyta
 wszystkie bazy ktore sa relacyjne
 !!! NIE WCHODZI UKŁAD KARTEZJAŃSKI
 najrzadziej stosowana relacja: 1:1
+stosowane do tabel słownikowych
+
+Tabele słownikowe to tabele pomocnicze/referencyjne zawieraja stale znormalizowane wartosci
+
+czasami rozbija sie tabelę na mniejsze tabele ( tabela A i B) kiedy np ma sie w ch... danych
+tabele dzieli sie np> w tabeli A sa dane i atrybuty mocne(czesto uzywane) a w tabeli B atybuty slabe( zadko stosowane)
+
+1:n (jeden do wielu) (n:1(wiele do jednego)) - (prosta kreska gdzie na jednym koncu sa || na koncach a na drugim jedna | z <) -||---------|<-
+najczesciej uzywane
+
+n:n (wiele do wielu) polega na 2 relajach 1:n  ->|---------|<-

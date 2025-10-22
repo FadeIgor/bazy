@@ -4,3 +4,6 @@ Tabele sa zwiazane relacjami
 struktury relacji 
 zmienne relacji - zwiazek z notacją
 relacja - zwiazek w tabelach relacjnych
+zmienna relacyjna - tabela / wynik zapytania relacji(select) - zmienna ktora reprezentuje zbior wierszy i kolumn
+zmienna ktara definiujemy moze zostac przewartościowaniu
+

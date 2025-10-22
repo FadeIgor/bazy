@@ -40,9 +40,18 @@ na SZBD sklada sie baza danych + aplikacja najczesciej jakas strona www
 
 bazy danych tworzyc tak by admin mial jak najlepszy dostep 
 
+Projektowanie modelu bazy danych powinno sie skladac z nastepujacych czynnosci:
 1. okreslenie wystepujacych zbiorow encji
 2. okreslenie atrybutow przypisanych do poszczegolnych encji
 3. okreslenie dziedziny poszczegolnych atrybotow
 4. ustalenie kluczy podstawowcyh
 5. okreslenie typow wystepujacych zwiazkow
 6. zweryfikowanie utwrzonego modelu
+
+projektowanie konceptualne logiczne i fizyczne
+konceptualne pojeciowe
+logiczne 
+fizyczne
+
+
+https://www.bazy.rzeszow.pl/klasa3/zasady_projektowania.pdf - wiekszosc diagramow

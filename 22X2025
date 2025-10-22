@@ -23,3 +23,11 @@ najczesciej uzywane
 n:n (wiele do wielu) polega na 2 relajach 1:n  ->|---------|<-
                 tabela z uczniami ->|---------|<- tabela z przedmiotami
 tabela z uczniami -||---------|<- lista uczniow ->|---------||- tabela z przedmiotami
+
+opcjonalnosc:
+------O- (moze)
+------|- (wymagany)
+
+Diagram zwiazkow encji lub diagram ERD(entity relationship diagram) - rodzaj graicznego przedstawiena zwiazkow pomiedzy enchami uzywany w 
+projektwaniu systemow informacyjnych do przedstawienia konceptualnych modeli danych uzywanyh w systemie
+

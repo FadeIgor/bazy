@@ -1,0 +1,102 @@
+1. PODSTAWOWE POJĘCIA
+Baza Danych - Zbiór danych z określonej dziedziny tematycznej (fragmentu rzeczywistości), zorganizowany w sposób ułatwiający dostęp za pomogą narzędzi DBMS.
+DBMS - DataBase Management System, oprogramowanie lub system umożliwiający tworzenie, organizowanie, modyfikowanie i zarządzanie bazami danych. DBMS jest w CMD, rzeczy typu PHPMYADMIN są interfejsem między CMD a użytkownikiem.
+PK (Klucz Główny) - niepowtarzalny identyfikator, łączy się z kluczem obcym tworząc relację
+FK (Klucz Obcy) - wskazanie na relację z kluczem głównym, pobiera dane oznaczone jako PK do innej tabeli
+Walidacja danych - sprawdzenie poprawności danych
+Dane pierwotne - dane które podajemy bazie danych, wpisujemy je do niej
+Dane pochodne - dane wyliczone na podstawie innych danych w bazie danych
+2. CHARAKTERYSTYKA BAZ DANYCH
+Cechy charakterystyczne baz danych:
+- trwałość danych - dane są zapisane na dysku
+- niezależność danych - dane istnieją niezależnie od programu DBMS. Każdy DBMS się połączy z każdą bazą danych
+- ochrona danych - występują mechanizmy kontroli dostępu, aby nikt nie naruszył integralności danych
+- integralność danych - dane muszą być zgodne z rzeczywistością
+Są 2 części bazy danych:
+- część intencjonalna - schemat bazy danych, zależności (związki)
+- część ekstensjonalna - rzeczywisty zbiór danych
+3. CHARAKTERYSTYKA ENCJI
+Encja - obiekt w bazach danych, pojęcie występuje tylko tam. Tabela.
+Atrybuty encji - dane charakteryzujące encję, konkretne dane w tej tabeli.
+Dziedzina encji - określenie jakie atrybuty mogą być stosowane, typ danych.
+Wystąpienie danych/krotka/tupla/rekord - zapisane w tabeli dane, jeden wiersz w tabeli.
+ID rekordu jest ZAWSZE unikalne.
+GRAFIKA DO TEGO:
+https://lh4.googleusercontent.com/proxy/6MlGOREezL4FXuieZhzKnkdPEPAXR4mQHT2UEE4xZ03EbHDRL7jcRlLwSOeXulbNfUORPcH5ErT-vHuhFCu44BmxRQOCAW1VlnCQoVLT09oUNnpe-eTpRFAE3PuTNpkrvgK8SmTBMRZC65PL_MDo-O-00Brg9C1AU3D7nQIKz1UUPkq6gXWKKl4
+3. OPERACJA W BAZACH DANYCH
+Podstawowa struktura operacji baz danych:
+C - Create
+R - Read
+U - Update
+D - Delete
+CRUD - cztery podstawowe operacje w bazach danych, fundamentalne dla systemów DBMS, podstawowe interakcje w bazą danych
+Języki zarządzania dzielą się na kilka grup:
+- DDL - Database Definition Language, Umożliwia zarządzenie strukturą danych (tworzenie tabeli itp.) Jej komendy to:
+- CREATE - tworzy bazę danych, tabele
+- DROP - usuwa obiekt lub całą bazę
+- ALTER - zmiana struktury bazy danych
+- TRUNCATE - usunięcie wszystkich rekordów w tabeli
+- COMMENT - dodanie komentarzy do obiektu
+- RENAME - zmiana nazwy istniejącego obiektu w bazie danych
+- DML - Data Manipulation Language, umożliwia manipulację danymi w tabelach. Komendy to:
+- INSERT - dodanie danych do tabeli
+- UPDATE - zmiana danych w tabeli
+- DELETE - usunięcie rekordu z tabeli
+- DCL - Data Control Language, służy do zarządzania prawami dostępu do bazy danych. Komendy to:
+- GRANT - dodanie nowych praw
+- REVOKE - odebranie praw
+- DQL - Data Query Language, służy do pobierania danych z baz i wyświetlania ich. Komendy to:
+- SELECT - wskazanie, że będziemy pobierać dane
+- FROM - wskazanie, z jakiej tabeli pobieramy dane
+- WHERE - filtrowanie danych
+- GROUP BY - grupowanie po danych w konkretnym atrybucie encji
+- HAVING - filtrowanie dla GROUP BY
+- DISTINCT - usuwa identyczne wyniki z rezultatu
+- ORDER BY - sortowanie kolejności wyświetlonych danych według konkretnego atrybutu
+- TCL - Transaction Control Language, wykonywanie wielu komend na raz. Komendy:
+- BEGIN TRANSACTION - oznacza początek transakcji
+- COMMIT - zapisuje zmiany wywołane podczas transakcji
+- ROLLBACK - cofa wszystkie zmiany podczas transakcji
+- SAVEPOINT - tworzy punkt zapisu podczas transakcji
+- DIL - nie istnieje oficjalnie, Data Integrity Language, pilnowanie integralności bazy danych
+Zapytanie do bazy danych nazywa się KWERENDĄ
+Rodzaje kwerend:
+- Wybierające - wyświetlają dane
+- Modyfikujące - zmieniają dane
+- krzyżowe - podsumowanie danych w formie czytelnych tabel
+- dołączające - łączenie kolumn
+- tworzące - tworzy jedną tabele na podstawie wielu innych
+4. MODELE BAZ DANYCH
+Model bazy danych - Zbiór zasad, relacji, operacji definiujących schemat bazy danych. Rodzaje:
+- Jednorodny - Wszystkie dane są przechowywane w jednej tabeli, arkuszu, nieuporządkowane
+- Hierarchiczny - Model przypominjący drzewo, każdy rekord obiekt ma jednego rodzica i może wielu potomków (jak pień i gałęzie)
+- Sieciowy - Rozwinięcie model hierarchicznego, gdzie wiele drzew może dzielić gałęzie
+- Obiektowy - Dane są przechowywane w postaci obiektów (zamiast tabel)
+- Relacyjny - Najczęściej używany, dane przechowywane w tabeli połączone za pomocą relacji (kluczy)
+Relacje występują tylko w Bazach Danych Relacyjnych (SQL)
+5. INTEGRALNOŚĆ BAZY DANYCH
+Rodzaje integralności bazy danych:
+- semantyczna - baza danych ma mieć sens, być w swoich ograniczeniach
+- encji - każda encja (tabela) musi mieć nazwę, dane w kolumnie tego samego typu i PK
+- referencji - relacja PK-FK musi być spójna
+Ograniczenia integralności statyczne:
+- CHECK - sprawdza, czy warunek jest spełniony. Jeśli nie, to nie przepuści
+- UNIQUE - dane nie mogą się powtórzyć
+- NOT NULL - dane nie mogą być nullem, muszą istnieć
+Ograniczenia integralności temporalne/dynamiczne:
+- ON DELETE - co zrobić jeśli powiązane dane zostaną usunięte
+- ON UPDATE - co zrobić jeśli powiązane dane się zmienią
+6. RELACJE W BAZACH DANYCH
+Rodzaje relacji w bazach danych relacyjnych:
+- 1:1 - jeden do jeden. Każdy rekord może być powiązany tylko z 1 innym rekordem z innej tabeli.
+- 1:n - jeden do wielu. Jeden rekord może być powiązany z wieloma rekordami z innej tabeli (jeden lekarz może mieć wiele pacjentów)
+- n:n - wiele do wielu. Działa na zasadzie podwójnej relacji 1:n. Wiele rekordów może być powiązane z wieloma rekordami (jeden student ma wiele zajęć, ale też jedne zajęcia wielu studentów)
+7. ARCHITEKTURA BAZY DANYCH
+Schemat ANSI/SPARC - model architektury baz danych. Dzieli się na 3 poziomy:
+- P. wewnętrzny (fizyczny) - opisuje jak dane są przechowywane na rzeczywistych dyskach
+- P. konceptualny (logiczny) - opisuje encje i relacje w bazie danych
+- P. zewnętrzny (widok użytkownika) - określa jak użytkownik lub aplikacja widzi dane
+Architektura n-warstwowa:
+- 1-warstwowa - serwer SQL, Apache i klient są na jednym urządzeniu
+- 2-warstwowa - osoby serwer SQL/Apache i klient
+- 3-warstwowa - osobny serwer SQL, serwer Apache i klient 

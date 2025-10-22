@@ -100,3 +100,36 @@ Architektura n-warstwowa:
 - 1-warstwowa - serwer SQL, Apache i klient są na jednym urządzeniu
 - 2-warstwowa - osoby serwer SQL/Apache i klient
 - 3-warstwowa - osobny serwer SQL, serwer Apache i klient 
+
+
+
+
+
+Języki zarządzania dzielą się na kilka grup:
+- DDL - Database Definition Language, Umożliwia zarządzenie strukturą danych (tworzenie tabeli itp.) Jej komendy to:
+- CREATE - tworzy bazę danych, tabele
+- DROP - usuwa obiekt lub całą bazę
+- ALTER - zmiana struktury bazy danych
+- TRUNCATE - usunięcie wszystkich rekordów w tabeli
+- COMMENT - dodanie komentarzy do obiektu
+- RENAME - zmiana nazwy istniejącego obiektu w bazie danych
+- DML - Data Manipulation Language, umożliwia manipulację danymi w tabelach. Komendy to:
+- INSERT - dodanie danych do tabeli
+- UPDATE - zmiana danych w tabeli
+- DELETE - usunięcie rekordu z tabeli
+- DCL - Data Control Language, służy do zarządzania prawami dostępu do bazy danych. Komendy to:
+- GRANT - dodanie nowych praw
+- REVOKE - odebranie praw
+- DQL - Data Query Language, służy do pobierania danych z baz i wyświetlania ich. Komendy to:
+- SELECT - wskazanie, że będziemy pobierać dane
+- FROM - wskazanie, z jakiej tabeli pobieramy dane
+- WHERE - filtrowanie danych
+- GROUP BY - grupowanie po danych w konkretnym atrybucie encji
+- HAVING - filtrowanie dla GROUP BY
+- DISTINCT - usuwa identyczne wyniki z rezultatu
+- ORDER BY - sortowanie kolejności wyświetlonych danych według konkretnego atrybutu
+- TCL - Transaction Control Language, wykonywanie wielu komend na raz. Komendy:
+- BEGIN TRANSACTION - oznacza początek transakcji
+- COMMIT - zapisuje zmiany wywołane podczas transakcji
+- ROLLBACK - cofa wszystkie zmiany podczas transakcji
+- SAVEPOINT - tworzy punkt zapisu podczas transakcji

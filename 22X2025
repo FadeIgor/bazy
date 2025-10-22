@@ -21,3 +21,5 @@ tabele dzieli sie np> w tabeli A sa dane i atrybuty mocne(czesto uzywane) a w ta
 najczesciej uzywane
 
 n:n (wiele do wielu) polega na 2 relajach 1:n  ->|---------|<-
+                tabela z uczniami ->|---------|<- tabela z przedmiotami
+tabela z uczniami -||---------|<- lista uczniow ->|---------||- tabela z przedmiotami

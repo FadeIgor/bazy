@@ -29,5 +29,20 @@ opcjonalnosc:
 ------|- (wymagany)
 
 Diagram zwiazkow encji lub diagram ERD(entity relationship diagram) - rodzaj graicznego przedstawiena zwiazkow pomiedzy enchami uzywany w 
-projektwaniu systemow informacyjnych do przedstawienia konceptualnych modeli danych uzywanyh w systemie
+projektwaniu systemow informacyjnych do przedstawienia konceptualnych modeli danych uzywanyh w systemie:
+https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/ERD_Representation.svg/759px-ERD_Representation.svg.png
 
+rzeczwistosc - analiza wymagan - modelowanie koncepcyjne - modelowanie logiczne - modelowanie fiyczne - system bazy danych
+
+https://www.aragorn.wi.pb.edu.pl/~mczajk/pbd/w1.pdf ( str 7) zdj
+
+na SZBD sklada sie baza danych + aplikacja najczesciej jakas strona www
+
+bazy danych tworzyc tak by admin mial jak najlepszy dostep 
+
+1. okreslenie wystepujacych zbiorow encji
+2. okreslenie atrybutow przypisanych do poszczegolnych encji
+3. okreslenie dziedziny poszczegolnych atrybotow
+4. ustalenie kluczy podstawowcyh
+5. okreslenie typow wystepujacych zwiazkow
+6. zweryfikowanie utwrzonego modelu

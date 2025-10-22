@@ -6,4 +6,7 @@ zmienne relacji - zwiazek z notacją
 relacja - zwiazek w tabelach relacjnych
 zmienna relacyjna - tabela / wynik zapytania relacji(select) - zmienna ktora reprezentuje zbior wierszy i kolumn
 zmienna ktara definiujemy moze zostac przewartościowaniu
-
+zmienna relacyjna zawiera relacje np. tymczasowa tabela moze to byc wynik zapytania select
+wszystkie bazy ktore sa relacyjne
+!!! NIE WCHODZI UKŁAD KARTEZJAŃSKI
+najrzadziej stosowana relacja: 1:1

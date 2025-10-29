@@ -45,9 +45,8 @@ chodzi o usuniecie sytuacji kiedy dane mozna odbudowac z innych tabel tak by nie
 
 5nf tabela ktorej nie da sie juz sensownie rozbic na mniejsze czesci bo kazde rozbicie prowadziloby do utraty info
 
-
-
-
+6 postac normalna
+6nf kozysta sie tylko w hurtowniach
 
 
 

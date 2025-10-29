@@ -38,7 +38,10 @@ jest odwrotoscia 3nf
 usuwanie stuacji w ktorych 1 tabela zawiera kilka list info o tym samym obiekcie ale nie sa istotne i zalezne od siebie
 oznacza to ze w tabeli nie mieszamy niezaleznych od siebie danych 
 
-
+5 postac normalna 
+5nf oznaczona czasami project join 
+ostatni krok normalizacji danych
+chodzi o usuniecie sytuacji kiedy dane mozna odbudowac z innych tabel tak by nie mozna podzielic na inne mniejsze kawalki z ktorych mozna by odbudowac dane
 
 
 

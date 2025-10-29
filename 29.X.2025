@@ -19,7 +19,14 @@ moze wymagac do rozbicia tabeli na mniejsze
 
 1. postac normalna 
 wiersz przecowuje info, musi posiadac klucz glowny dane sa atomowe( rozbicie np imie nazwisko data urodzenia kod miasto pesel ulica nr domu nr mieszkania - niepodzielne dane)
-dzielimy za pomoca klucza obcego
+dzielimy tabele za pomoca klucza obcego 2NF(S)
+wyeliminowac pola ktore nie zaleza od klucza 
 
 1 3/4. postac nienormalna 
 jest to nie normalne(chlopacy z knurowa zawsze z tyl)
+
+3 postac normalna glosi ze kolumna informacyjna nielezaca do klucza nie zalezy od klucza 
+kazda tabela musi zawierac wyzsze nf tylko zalezy od klucza glownego
+
+4 postac normalna 4nf 
+zeby bylo nf musi byc 3nf

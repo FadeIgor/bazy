@@ -43,7 +43,7 @@ oznacza to ze w tabeli nie mieszamy niezaleznych od siebie danych
 ostatni krok normalizacji danych
 chodzi o usuniecie sytuacji kiedy dane mozna odbudowac z innych tabel tak by nie mozna podzielic na inne mniejsze kawalki z ktorych mozna by odbudowac dane
 
-
+5nf tabela ktorej nie da sie juz sensownie rozbic na mniejsze czesci bo kazde rozbicie prowadziloby do utraty info
 
 
 

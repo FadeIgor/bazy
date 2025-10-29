@@ -1,0 +1,5 @@
+Anomalia
+aby baza danych mogla funkcjonowac musi sie odnosic do normalizjci danch, jak jej nie ma to dochodzi do anomalii(brak spojnosci, nadmiarowosc utrata, bledy danych)
+Powstaja gdy umieszczamy zbyt duzo danych w tabelii
+Kazda tabele poddawac normalizacji
+do anomali moze dajsc jak powielamy danach

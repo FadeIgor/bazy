@@ -4,6 +4,11 @@ Powstaja gdy umieszczamy zbyt duzo danych w tabelii
 Kazda tabele poddawac normalizacji
 do anomali moze dajsc jak powielamy dane
 anomalia redundancja 
-dane zostaly zmodyfikowane w pewnych danych
+anomali modyfikacji - dane zostaly zmodyfikowane w pewnych krotkach
 anomalia usowania - usuniecie jednych danych moze usunac inne dane
 anomali dolaczania - wprowadzanie informacji jes mozliwe tylko wtedy gdy wprowadzamy jakies inne dane
+
+normalizacja bazy danych procees eliminujacy nadmiorowosc danych glowna idea to trzymanie danych w tylko 1 miejscu - wieksze bezpieczenstwo mniejsze ryzyko nadmiarowosci danych
+
+tabele powinn byc logicznie upozadkowanie - w kazdym jak najmniejsza porcja danych
+

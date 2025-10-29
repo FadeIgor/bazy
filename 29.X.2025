@@ -16,3 +16,10 @@ normalizacja bazy danych to proces sprowadzania bazy danych do odpowiedniej post
 
 schematy jak bardzo jest znormalizowana baza danych
 moze wymagac do rozbicia tabeli na mniejsze 
+
+1. postac normalna 
+wiersz przecowuje info, musi posiadac klucz glowny dane sa atomowe( rozbicie np imie nazwisko data urodzenia kod miasto pesel ulica nr domu nr mieszkania - niepodzielne dane)
+dzielimy za pomoca klucza obcego
+
+1 3/4. postac nienormalna 
+jest to nie normalne(chlopacy z knurowa zawsze z tyl)

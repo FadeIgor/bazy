@@ -1,3 +1,4 @@
+(baza oparta na wypozyczalni aut)
 diagramy przypadkow - przypadek uzycua
 inzyneria oprogramowania dziedzina systemow zajmujaca sie aspektami produkcji kazdy etap aspekt testy jednostkowe calosciowe i inne
 
@@ -38,6 +39,14 @@ ale inicjonowany nie zna inicjatora
 include - rozszerzamy, to co jest, mowi nam czy wgl mamy ten samochod  
 
 extend - moze nie musi (moze ubezbieczenie, kolor pelny bak) - opcje, grot  skierowany w 2 strone w porownaniu do include 
+
+przypadki uzyc 
+tworzymy zwykla funkcjonalnosc systemu (nie jakis wielki, nieskomlikowany)
+klient moze ale nie musi byc zalogowany - moze przegladac albo dokonac rezerwacji
+
+baze twozymy potem napodstawie systemu
+jak sie zaloguje to moze zarzacac koszykiem, moze przejsc do zamowienia, rzeczy w koszyku nie jest warunkiem do ich zakupu, ale jesli sie zdecyduje do mozna przejsc do dokonania platnosci
+naliczanie rabatu jako extend(nie kazdy musi miec rabat nie kazdy moze miec rabat itp)
 
 
 

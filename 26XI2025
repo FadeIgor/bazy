@@ -32,3 +32,13 @@ najczesciej stosuje sie asocjacje do laczenia diagramow
 czesto mamy asocjacje skierowana klient - samochod (inicjator - inicjowany)
 klient jest inicjatorem uslugi 
 asocjacja skierowana wskazuje na fakt ze aktor zawsze zna element inicjowany (samochod jest dla aktora)
+ale inicjonowany nie zna inicjatora
+
+2 zwiazki:
+include - to co jest mowi nam czy wgl mamy ten samochod  
+
+extend - moze nie musi (moze ubezbieczenie, kolor pelny bak) - opcje, grot  skierowany w 2 strone w porownaniu do include 
+
+
+
+

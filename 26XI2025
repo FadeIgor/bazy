@@ -1,0 +1,34 @@
+diagramy przypadkow - przypadek uzycua
+inzyneria oprogramowania dziedzina systemow zajmujaca sie aspektami produkcji kazdy etap aspekt testy jednostkowe calosciowe i inne
+
+informatyka zajmuje sie bardziej teorytyczne aspekty produkcji oprogramowania
+
+wymagania - pozwalaja okreslic jaki ma byc system(nie baza) 
+
+I faaza - slowa (konceptualna) UML(unified modeling language) graficzny sposob prezentaji skladnikow 
+diagram przypadkuw jeden z wielu, a jest ich duzo
+UML- notacja umozliwiajaca pokazanie systemu w postaci graficznej
+
+Diagram przypadkow uzycia - jest graficznym diagramem przedstawiajacym funkcjonalnosc systemu wraaz z jego otoczeniem - przedstawuenbie wlasnosci syst w taki sposob aby uzytkownik mogl swobodnie poruszczac sie po systemie
+mozna zobaczyc usluge w diagramie ktore sa widoczne z zewnatrz systemu 
+
+semantyka:
+-use case 
+notacja/przypadek uzycia - zbior scenariuszy powiazanych ze soba
+graficzna prezentacja definiuje zachowania syst bez informowania o struktorze ma on pokazac ten diagram na zdefiniowanie przyszlego spodziewanego efektu dzialan
+
+ma za zadanie dostarczyc wyniki z ktorych user bedzie mogl uzyc
+przypadek uzycia musi byc w interakcji z 1 aktorem
+
+kazdy przypadek mozemy opisac za pomoca:
+- nazw
+-opis
+- przeplyw zdarzen\
+- zaleznosci i relacje
+- diagramy aktywnosci 
+
+aktor - uzytkownik roli nie musi byc to osoba fizyczna moze byc systemem, reprezentuje role w ktora moze sie wcielic uzytkownik/ maszyna/system zawsze reprezentuje otoczenie systemu musi byc w interakcji z min 1 przypadkiem uzycia
+najczesciej stosuje sie asocjacje do laczenia diagramow
+czesto mamy asocjacje skierowana klient - samochod (inicjator - inicjowany)
+klient jest inicjatorem uslugi 
+asocjacja skierowana wskazuje na fakt ze aktor zawsze zna element inicjowany (samochod jest dla aktora)

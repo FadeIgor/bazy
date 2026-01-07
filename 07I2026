@@ -1,5 +1,5 @@
-funkcje 
-umnozliwia podsumowywanie podzbiorow tabeli 
+funkcje grupujace
+umozliwia podsumowywanie podzbiorow tabeli 
 
 agregowanie
 
@@ -22,3 +22,5 @@ dane posortowane dla ostatniej okreslonej kolumny, musza byc kolumnami pobierany
 
 policzyc ilsc uczniow pogrupowanych na klasy 
 SELECT id_klasa, COUNT(*) FROM uczen GROUP BY id_klasa;
+
+filtrowanie grup - HAVING(ogranicza zapytanie o zadane wyrazenie logiczne), WHERE (grupuje bez filtrowania)

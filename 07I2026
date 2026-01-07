@@ -17,7 +17,7 @@ SELECT nazwisko, imie FROM uczen ORDER BY nazwisko DESC LIMIT 5; - 5 pierwszych 
 
 SELECT nazwisko, imie FROM uczen ORDER BY nazwisko ASC, imie DESC LIMIT 5; - 5 pierwszych nazwisk w kolejnosci alfabetycznej i imion w odwrotnej kolejnosci alfabetycznej
 
-GROUP BY - grupuje wiersze, musza wystapic wszystkie zwracane kolumny, grupuje po zadanych kryteriach moze zawierac dowolna liczbe kolumn, zagniezdzenie grupy - bardziej precyzyjne, 
+GROUP BY - grupuje wiersze, tworzy grupe, musza wystapic wszystkie zwracane kolumny, grupuje po zadanych kryteriach moze zawierac dowolna liczbe kolumn, zagniezdzenie grupy - bardziej precyzyjne, 
 dane posortowane dla ostatniej okreslonej kolumny, musza byc kolumnami pobieranymi z bazy nie moga byc funkcjami agregujacymi
 
 policzyc ilsc uczniow pogrupowanych na klasy 

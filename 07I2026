@@ -24,3 +24,10 @@ policzyc ilsc uczniow pogrupowanych na klasy
 SELECT id_klasa, COUNT(*) FROM uczen GROUP BY id_klasa;
 
 filtrowanie grup - HAVING(ogranicza zapytanie o zadane wyrazenie logiczne), WHERE (grupuje bez filtrowania)
+WHERE grupuje dane przed filtrowaniem, HAVING po  
+
+SELECT id_klasa, COUNT(*) FROM uczen GROUP BY id_klasa HAVING COUNT(*)>=35; policzyc ilsc uczniow pogrupowanych na klasy  gdzie jest przynajmniej 35 uczniow
+
+AS(w rekawie) - umozliwia tworzenie alisow dla naglowka tabeli wynikowej
+
+SELECT id_klasa AS klasa, COUNT(*) AS liczba FROM uczen GROUP BY id_klasa HAVING COUNT(*)>=35;

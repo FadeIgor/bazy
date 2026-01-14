@@ -42,6 +42,11 @@ SELECT COUNT(DISTINCT ocena) FROM ocena;
 nadmiarowosc - tu jej nie lubimy ale moze sie pojawic
 
 
+FIRMA
+
+SELECT id_pracownik, SUM(kwota) AS suma_premi FROM premia GROUP BY id_pracownik ORDER BY suma_premi DESC;
+
+SELECT nazwa, AVG(pensja) FROM grupa, pracownik GROUP BY nazwa;
 
 
 

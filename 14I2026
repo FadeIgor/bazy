@@ -33,3 +33,23 @@ DISTINCT - moze sie po tym pojawyc tylko nazwa kolumny
 ALL - domyslnie sie ustawia 
 
 SELECT AVG(ocena), SUM(ocena) FROM ocena;
+SELECT MIN(waga) FROM kategorie_ocen;
+SELECT MAX(waga) FROM kategorie_ocen;
+SELECT COUNT(ocena) FROM ocena;
+SELECT COUNT(DISTINCT ocena) FROM ocena;
+
+nadmiarowosc - tu jej nie lubimy ale moze sie pojawic
+
+
+
+
+
+
+
+
+
+
+
+
+
+

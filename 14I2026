@@ -1,7 +1,35 @@
-funkcje agregujace
+funkcje agregujace -dzialajaca w zbiorze wierszy w celu obliczenia zwrocenia jednej wartosci
 
-AVG() zwraca srednia wartosc kolumny
-COUNT() zwraca liczbe wierszy w kolumnie\
-MAX() zwrawca najwieksza wartosc w kolumnie
-MIN() zwrawca najmniejsza wartosc w kolumnie
-SUM() zwraca sume wartosci w kolumnie
+potwierdzewnie danych bez ich rzeczywistego pobierania 
+tworzenie raportow np okreslenie liczby wierszow w tabeli, lub wierszy spelniajac okreslony warunek lub zawierajace okreslone wartosci 
+pobieranie sumy wartosci zbiorow wierszy tabeku w zbiorze mozna znalezc najwieksza i najmniejsza i srednia wartosc w kolumnie we wszystkich wierszach
+pobieranie danyc rzeczywistych z tabeli to strata czasu i zasobow 
+
+w celu tworzenia tego typy zapytan korzystamy z ich funkcji:
+- AVG() zwraca srednia wartosc kolumny - zlicza liczbe wierszy i dzieli sume ich wartosci przez liczbe wierszy - moze zwrocic srednia wszystkich lub tylko wybranych wierszy
+  SELECT AVG(prod_cena) AS sr_cena FROM Produkty;
+  SELECT AVG(prod_cena) AS sr_cena FROM Produkty WHERE dost_id = 'DLL01';
+  wyjatek gdy pojedyncza wartosc oblicza sie na podstawie zawartosci kilku kolumn
+  jak jest NULL to AVG to ignoruje
+
+- COUNT() zwraca liczbe wierszy w kolumnie - zliczenie liczby wierdzy w tabeli nie zaleznie od ich wartosci moze sie znajdowac * albo nazwa kolumny ktora nie am byc pusta
+  SELECT COUNT(*) AS liczba_klientow FROM klienci; - zwroci wszystkich klientow
+  SELECT COUNT(kl_email) AS liczba_klientow FROM klienci; - zwroci wszystkich klientow pod warunkiem ze kolumna nie jest pusta
+
+- MAX() zwrawca najwieksza wartosc w kolumnie - funkcja wymaga podania nazwy kolumny moze zwrocic najwysza date NULL sa ignorowane
+  SELECT MAX(prod_cena) AS maks_cena FROM PRodukty; - chcemy zwrocic najwysza cene
+
+- MIN() zwrawca najmniejsza wartosc w kolumnie - dokladnie to samo co max tylko ze zwraca najmniejsza, tez ignoruje nulle 
+- SUM() zwraca sume wartosci w kolumnie - 
+  SELECT SUM(ilosc) AS elementy_zamowienia FROM ElementyZamowienia WHERE zam_numer = 20005; - filtujemy dla zamowienia 20005
+  SELECT SUM(cena_elementow*ilosc) AS elementy_zamowienia FROM ElementyZamowienia WHERE zam_numer = 20005; - 
+
+z tych funkcji mozemy korzystac na 2 sposoby przeprowadzic dla wszystkich warrtosci lub dla tylko unikatowych
+
+Agregacjia tylko unikatowych wartosci 
+DISTINCT - moze sie po tym pojawyc tylko nazwa kolumny
+  SELECT AVG(DISTINCT prod_cena) AS sr_cena FROM Produkty WHERE dost_id = 'DLL01'; - dodany zostal distinct, wylaczylo z obliczen powtorzen po 
+  SELECT COUNT(*) AS liczba_elementow MIN(prod_cena) AS cena_min, MAX(prod_cena) AS cena_max, MAX(prod_cena) AS cena_max ... 
+ALL - domyslnie sie ustawia 
+
+SELECT AVG(ocena), SUM(ocena) FROM ocena;

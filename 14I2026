@@ -20,6 +20,7 @@ w celu tworzenia tego typy zapytan korzystamy z ich funkcji:
   SELECT MAX(prod_cena) AS maks_cena FROM PRodukty; - chcemy zwrocic najwysza cene
 
 - MIN() zwrawca najmniejsza wartosc w kolumnie - dokladnie to samo co max tylko ze zwraca najmniejsza, tez ignoruje nulle 
+
 - SUM() zwraca sume wartosci w kolumnie - 
   SELECT SUM(ilosc) AS elementy_zamowienia FROM ElementyZamowienia WHERE zam_numer = 20005; - filtujemy dla zamowienia 20005
   SELECT SUM(cena_elementow*ilosc) AS elementy_zamowienia FROM ElementyZamowienia WHERE zam_numer = 20005; - 

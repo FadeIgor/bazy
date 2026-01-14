@@ -1,1 +1,7 @@
 funkcje agregujace
+
+AVG() zwraca srednia wartosc kolumny
+COUNT() zwraca liczbe wierszy w kolumnie\
+MAX() zwrawca najwieksza wartosc w kolumnie
+MIN() zwrawca najmniejsza wartosc w kolumnie
+SUM() zwraca sume wartosci w kolumnie

@@ -1,3 +1,21 @@
-SELECT pracownicy.stanowisko, AVG(pracownicy.zarobki) AS srednia FROM pracownicy
-GROUP BY pracownicy.zarobki  
-ORDER BY srednia ASC
+1. srednie zarobki dla danych stanowisk
+    SELECT pracownicy.stanowisko, AVG(pracownicy.zarobki) AS srednia FROM pracownicy
+    GROUP BY pracownicy.stanowisko  
+    ORDER BY srednia ASC;
+2. stanowiska gdzie pracuje wiecej niz 1 osoba
+    SELECT pracownicy.stanowisko, COUNT(*) AS ilosc FROM pracownicy
+    GROUP BY pracownicy.stanowisko
+    HAVING ilosc > 1;
+    
+    SELECT klienci.miasto, COUNT(*) AS ilosc
+    FROM klienci
+    GROUP BY klienci.miasto
+    HAVING ilosc > 2;
+
+3. kategorie produktow gdzie cena <100
+    SELECT produkty.kategoria, AVG(produkty.cena) as srednia 
+    FROM produkty
+    GROUP BY kategoria
+    HAVING srednia > 100;
+
+4. 

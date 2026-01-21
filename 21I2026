@@ -1,0 +1,3 @@
+SELECT pracownicy.stanowisko, AVG(pracownicy.zarobki) AS srednia FROM pracownicy
+GROUP BY pracownicy.zarobki  
+ORDER BY srednia ASC

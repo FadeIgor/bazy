@@ -1,3 +1,5 @@
+HURTOWNIA
+
 1. srednie zarobki dla danych stanowisk
     SELECT pracownicy.stanowisko, AVG(pracownicy.zarobki) AS srednia FROM pracownicy
     GROUP BY pracownicy.stanowisko  
@@ -43,6 +45,8 @@
     FROM produkty
     GROUP BY produkty.kategoria
     ORDER BY AVG(produkty.cena) ASC;
+
+9. 
 
 
 

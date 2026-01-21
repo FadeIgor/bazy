@@ -18,4 +18,18 @@
     GROUP BY kategoria
     HAVING srednia > 100;
 
-4. 
+4. suma >1000
+    SELECT produkty.kategoria, SUM(produkty.cena) as suma 
+    FROM produkty
+    GROUP BY kategoria
+    HAVING suma > 1000;
+
+5.
+    SELECT * FROM produkty
+    ORDER BY cena DESC;
+
+6. pracownicy wedlug zarobkow rosnaca
+    SELECT * FROM pracownicy
+    ORDER BY zarobki ASC;    
+
+

@@ -46,7 +46,11 @@ HURTOWNIA
     GROUP BY produkty.kategoria
     ORDER BY AVG(produkty.cena) ASC;
 
-9. 
+9.  stanowiska wedlug sumy zarobkow malejaco
+    SELECT pracownicy.stanowisko, SUM(pracownicy.zarobki)
+    FROM pracownicy
+    GROUP BY stanowisko
+    ORDER BY SUM(zarobki) DESC;
 
 
 

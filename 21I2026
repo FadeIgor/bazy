@@ -38,6 +38,12 @@
     GROUP BY klienci.miasto
     ORDER BY COUNT(*) DESC;
 
+8. srednia cena produktow rosnaca
+    SELECT produkty.kategoria, AVG(produkty.cena)
+    FROM produkty
+    GROUP BY produkty.kategoria
+    ORDER BY AVG(produkty.cena) ASC;
+
 
 
 

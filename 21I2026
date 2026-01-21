@@ -52,6 +52,9 @@ HURTOWNIA
     GROUP BY stanowisko
     ORDER BY SUM(zarobki) DESC;
 
+10. produkty drozsze niz srednai cena wszytkich produktow
+    SELECT * FROM produkty
+    WHERE cena > (SELECT AVG(produkty.cena) FROM produkty);
 
 
 

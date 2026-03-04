@@ -44,4 +44,11 @@ cs			case sensitive			A != a
 ai			Accent insensitive		ą == a
 as			Accent sensitive		ą != a
 
+CHECK
+CREATE TABLE osoby (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+	imie varchar(50),
+    CHECK (imie REGEXP '^[A-Za-z]+$')
+)
+nie zadziala w mariaDB
 

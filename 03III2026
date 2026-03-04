@@ -130,3 +130,13 @@ slozy wlacznie do laczenia warunkow (odziwo jest to poprawne zeby korzystac z te
 
 SELECT nazwa, cena, ilsoc FROM produkt 
 WHERE cena <30 and ilosc> 50;
+
+OR 
+lewa i prawa strona 
+
+SELECT kolumna 
+FROM tabela 
+WHERE warunek1 or warunek2 or warunek3;
+
+KOLEJNOSC ODLICZNAIA
+NOT AND OR

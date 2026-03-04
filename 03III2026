@@ -31,3 +31,17 @@ ALTER TABLE osoby
   MODIFY imie varchar(50)
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_polish_ci;
+
+collate - zestaw regul ktore beda okreslay glowne zasady rpzy tekscie - sortowanie i poruwnywanie,  system ma uznawac ze duze A to to samo co male a, NIE CASE SENSITIVE
+ale jesli pojawi sie ą to to samo co a accent insensitivy - moze powodowac to problemy techniczne 
+
+uzycie tego polish_ci gwarantuje wydajnosc, poprawne sortowanie,
+przy ci male i duze literu to to samo, a przy cs juz nie
+
+oznaczenie  znaczenie 				przyklad
+ci			case insensitive		A == a
+cs			case sensitive			A != a
+ai			Accent insensitive		ą == a
+as			Accent sensitive		ą != a
+
+

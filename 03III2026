@@ -115,3 +115,18 @@ not exists
 SELECT kolumny 
 from tabela1
 WHERE NOT EXISTS (SELECT 1 FROM tabela2 where warunek);
+
+SELECT nazwa FROM producent WHERE EXISTS (SELECT nazwa FROM prodkut WHEREprodukt.producent_id = producent.id and cena <10);
+
+like 
+SELECT nazwisko FROM pracownik WHERE nazwisko LIKE "W%"
+wszyscy ktorych nazwisko zaczyna sie na W
+
+SELECT nazwisko FROM pracownik WHERE nazwisko LIKE "%a"
+wszyscy ktorych nazwisko konczy sie na a 
+
+AND 
+slozy wlacznie do laczenia warunkow (odziwo jest to poprawne zeby korzystac z tego zamiast join)
+
+SELECT nazwa, cena, ilsoc FROM produkt 
+WHERE cena <30 and ilosc> 50;

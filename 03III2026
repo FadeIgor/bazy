@@ -76,3 +76,6 @@ AFTER istniejaca_kolumna;
 
 ALTER TABLE osoby ADD COLUMN wiek int AFTER imie;
 
+jesli ma byc 1
+ALTER TABLE osoby ADD COLUMN pesel varchar(50) FIRST;
+jesli ostanie, to nic nie dopisujemy po typie

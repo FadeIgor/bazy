@@ -8,3 +8,26 @@ CREATE DATABASE moja_baza
   COLLATE utf8mb4_polish_ci;
 
 standard unicome ponad 1mln bez mb4 tracimy do 90% (znaki, znaki matematyczne itp) 
+
+CREATE TABLE osoby (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    imie VARCHAR(50)
+)CHARACTER SET utf8mb4
+  COLLATE utf8mb4_polish_ci;
+(chyBA TAK)
+
+zmiana w bazie danych
+ALTER DATABASE moja_baza
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_polish_ci;
+
+tak samo w tabeli 
+ALTER TABLE moja_baza
+  CONVERT TO CHARACTER SET utf8mb4
+  COLLATE utf8mb4_polish_ci;
+
+zmiana w samej kolumnie 
+ALTER TABLE osoby
+  MODIFY imie varchar(50)
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_polish_ci;

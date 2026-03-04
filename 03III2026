@@ -138,5 +138,9 @@ SELECT kolumna
 FROM tabela 
 WHERE warunek1 or warunek2 or warunek3;
 
-KOLEJNOSC ODLICZNAIA
+SELECT nazwisko 
+FROM klien
+WHERE nazwisko like "%ek" or "%ski";
+
+KOLEJNOSC ODLICZNANIA
 NOT AND OR

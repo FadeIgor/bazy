@@ -80,3 +80,38 @@ jesli ma byc 1
 ALTER TABLE osoby ADD COLUMN pesel varchar(50) FIRST;
 jesli ostanie, to nic nie dopisujemy po typie
 ALTER TABLE osoby ADD COLUMN adres varchar(100);
+
+operatory porpownania
+BETWEEN sprawdza czy wartosc sie miesci miedzy danymi 
+
+SELECT kolumna 
+FROM tabela
+WHERE kolumna BETWEEN 18 AND 65;
+
+SELECT nazwa, produkt, ilosc  
+FROM produkty
+WHERE/HAVING cena BETWEEN 100 AND 120;
+
+IN	
+SELECT kolumna   
+FROM tabela
+WHERE kolumna IN (wartosc1, wartosc2, wartosc3, wartosc4...);
+
+SELECT nazwa, cena, ilosc
+FROM produkty
+WHERE kategoria_id IN (2, 3) AND ilosc > 70;
+
+DISTINCT
+wyswietla bez powtarzania sie danych - niepowtarzajace sie dane
+
+SELECT DISTINCT kraj FROM producent;
+
+exists
+SELECT kolumny 
+from tabela1
+WHERE EXISTS (SELECT 1 FROM tabela2 where warunek);
+
+not exists
+SELECT kolumny 
+from tabela1
+WHERE NOT EXISTS (SELECT 1 FROM tabela2 where warunek);

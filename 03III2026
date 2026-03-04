@@ -1,1 +1,10 @@
+MariaDB i mySQL mieli byc kompatybilne, ale nie sa 
+trzeba sie nauczyc tworzenia bazy z odpowiednim kodowaniem, nie tylko domyslnym
+w utf4 zmiescimy wiekszosc rzeczy
+utf8mb4 obsluguje wszystkie zeczy, ale musimy wybrac polish_ci
 
+CREATE DATABASE moja_baza
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_polish_ci;
+
+standard unicome ponad 1mln bez mb4 tracimy do 90% (znaki, znaki matematyczne itp) 

@@ -8,4 +8,9 @@ where produkty.cena BETWEEN 100 AND 1000;
 3. klienci z miast na w
 SELECT * FROM klienci WHERE klienci.miasto LIKE "W%";
 
-4. 
+4. zamowienia klientow 1 i 2
+SELECT * FROM zamowienia WHERE id_klienta IN (1, 2);
+SELECT * FROM zamowienia WHERE id_klienta  = 1 or id_klienta = 2;
+
+5. klienci nie mieszkaja w wwa
+SELECT * FROM klienci WHERE klienci.miasto != 'Warszawa';

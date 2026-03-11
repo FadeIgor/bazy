@@ -23,3 +23,19 @@ SELECT * FROM zamowienia WHERE data_zamowienia BETWEEN '2024-01-01' AND '2024-02
 
 8. pozycja 1+
 SELECT * FROM zamowienia WHERE EXISTS( SELECT 1 FROM pozycjezamowienia WHERE pozycjezamowienia.id_zamowienia = zamowienia.id_zamowienia);
+
+9. zamowienia w lutym lub marcu 2025
+SELECT * FROM zamowienia WHERE data_zamowienia BETWEEN '2024-02-01' and '2024-03-31';
+
+10. produkty zamowione w ilosci 1-3
+SELECT * FROM produkty WHERE produkty.id_produktu IN(
+  	SELECT id_produktu FROM pozycjezamowienia WHERE ilosc BETWEEN 1 AND 3  
+);
+
+11. produkty zamowione wiecej niz 1 raz
+SELECT * FROM produkty WHERE produkty.id_produktu IN(
+  	SELECT id_produktu FROM pozycjezamowienia WHERE ilosc > 1  
+);
+
+12. klienci ktorzy zamowili ksiazki
+zdj w telefonie

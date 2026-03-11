@@ -21,4 +21,5 @@ SELECT * FROM kategorie WHERE nazwa LIKE "%o%";
 7. zamowienai miedzy 1.01 an 28.02
 SELECT * FROM zamowienia WHERE data_zamowienia BETWEEN '2024-01-01' AND '2024-02-28';
 
-8. 
+8. pozycja 1+
+SELECT * FROM zamowienia WHERE EXISTS( SELECT 1 FROM pozycjezamowienia WHERE pozycjezamowienia.id_zamowienia = zamowienia.id_zamowienia);

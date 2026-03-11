@@ -14,3 +14,11 @@ SELECT * FROM zamowienia WHERE id_klienta  = 1 or id_klienta = 2;
 
 5. klienci nie mieszkaja w wwa
 SELECT * FROM klienci WHERE klienci.miasto != 'Warszawa';
+
+6. nazwy kategorii zawierajace o w nazwie
+SELECT * FROM kategorie WHERE nazwa LIKE "%o%";
+
+7. zamowienai miedzy 1.01 an 28.02
+SELECT * FROM zamowienia WHERE data_zamowienia BETWEEN '2024-01-01' AND '2024-02-28';
+
+8. 

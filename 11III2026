@@ -1,1 +1,11 @@
+1. unikalne miasta klientow
+SELECT DISTINCT klienci.miasto FROM klienci;
 
+2. produkty w cenie 100 -1000zl 
+SELECT * FROM produkty
+where produkty.cena BETWEEN 100 AND 1000;
+
+3. klienci z miast na w
+SELECT * FROM klienci WHERE klienci.miasto LIKE "W%";
+
+4. 
